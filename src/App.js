@@ -1,14 +1,25 @@
 import NavBar from './components/NavBar';
+import Create from './pages/Crete';
 import Home from './pages/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <div className="content">
-        <Home />
+    <Router>
+      <div className="App">
+        <NavBar />
+        <div className="content">
+        <Routes>
+          <Route path="/"
+              element={<Home />}>
+          </Route>
+          <Route path="/create"
+              element={<Create />}>
+          </Route>
+        </Routes> 
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
