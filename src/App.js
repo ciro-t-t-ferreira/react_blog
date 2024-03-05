@@ -1,6 +1,6 @@
 import BlogDetails from './components/BlogDetais';
 import NavBar from './components/NavBar';
-import Create from './pages/Crete';
+import Create from './pages/Create';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
